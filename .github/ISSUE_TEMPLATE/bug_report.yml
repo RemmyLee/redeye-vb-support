@@ -1,0 +1,48 @@
+name: Bug Report
+description: Report something that's not working in RedEye VB
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please fill out the form below — the more detail you give, the faster we can fix it.
+  - type: input
+    id: rom
+    attributes:
+      label: ROM you were running
+      description: Homebrew name + source URL, please. **Do not paste copyrighted ROMs or attach copyrighted ROM files.**
+      placeholder: "e.g. Hunter (PVBCC10) — https://www.virtual-boy.com/homebrew/hunter/"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, what actually happened?
+      placeholder: |
+        1. Loaded Hunter
+        2. Pressed Start
+        3. Expected the title screen, got a black screen with audio glitches
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "e.g. macOS 15.4"
+    validations:
+      required: true
+  - type: input
+    id: redeye
+    attributes:
+      label: RedEye VB version
+      description: Visible in RedEye VB → About menu
+      placeholder: "e.g. 1.0.1"
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag images directly into this field if relevant.

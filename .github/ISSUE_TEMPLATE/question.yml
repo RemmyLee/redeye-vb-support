@@ -1,0 +1,12 @@
+name: Question / Help
+description: Ask a question or get help using RedEye VB
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: What can we help with?
+      description: Please check the [Support page](https://remmylee.github.io/redeye-vb-support/support.html) first — it covers controls, hotkeys, save states, netplay, etc.
+    validations:
+      required: true

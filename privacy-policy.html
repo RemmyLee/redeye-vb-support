@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &mdash; RedEye VB</title>
+<meta name="description" content="RedEye VB collects nothing. This page explains exactly what data the app does and does not access.">
+<link rel="icon" type="image/png" href="icon-128.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="wrap">
+        <a class="logo" href="./"><img src="icon-128.png" alt="">RedEye VB</a>
+        <span class="tag">Virtual Boy Emulator</span>
+        <nav>
+            <a href="./">Home</a>
+            <a href="support.html">Support</a>
+            <a href="privacy-policy.html" class="active">Privacy</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="wrap">
+        <h1>Privacy Policy</h1>
+        <p class="meta">Last updated: April 16, 2026</p>
+
+        <p>RedEye VB ("the App") is a Mac application that emulates the Nintendo Virtual Boy console. This Privacy Policy explains what information the App does and does not collect.</p>
+
+        <h2>Summary</h2>
+        <blockquote><strong>The App does not collect, store, or transmit any personal information.</strong> No analytics, no telemetry, no advertising SDKs, no crash reporters, no third-party services of any kind. The App functions entirely on your Mac.</blockquote>
+
+        <h2>Data the App Reads on Your Device</h2>
+        <p>To do its job, the App reads the following data from your Mac. None of this data ever leaves your device.</p>
+        <ul>
+            <li><strong>ROM files</strong> that you explicitly choose via the standard macOS file picker. These are read-only and remain on your local filesystem.</li>
+            <li><strong>Save states and SRAM (battery save) files</strong> are written next to the ROM you choose to play, in the same folder. The App never moves them off your Mac.</li>
+            <li><strong>App settings</strong> (such as your selected display mode, palette, and controller mapping) are stored on your local device using Apple's standard <code>NSUserDefaults</code> &mdash; a property list inside the App's sandbox container.</li>
+            <li><strong>Screenshots and video recordings</strong> that you choose to capture are written only to the folder you select in the standard macOS save panel.</li>
+        </ul>
+
+        <h2>Network Use</h2>
+        <p>The App uses your local network for <strong>one feature only</strong>: link-cable netplay between two copies of the App on the same Wi-Fi network. This is implemented via Apple's standard Bonjour discovery (<code>_redeye-netplay._tcp</code>) and a direct TCP connection between peers you choose to play with.</p>
+        <ul>
+            <li>No data is sent to any internet server.</li>
+            <li>No user identifiers, account names, or telemetry are exchanged.</li>
+            <li>The peer-to-peer connection carries only the raw bytes the original Virtual Boy hardware would have sent over its physical link cable.</li>
+        </ul>
+        <p>You may decline local network access at any time in <strong>System Settings &rarr; Privacy &amp; Security &rarr; Local Network</strong>. The App will continue to work fully for single-player use.</p>
+
+        <h2>Data the App Does NOT Collect</h2>
+        <p>The App does not collect, request, or have access to:</p>
+        <ul>
+            <li>Your name, email address, or any account credentials</li>
+            <li>Your contacts, calendars, photos, or other Mac data outside the files you explicitly open</li>
+            <li>Your location</li>
+            <li>Crash reports or analytics</li>
+            <li>Any unique device identifier</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>The App does not knowingly collect any information from anyone, including children under the age of 13.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>If this policy ever changes, the updated version will be published at the same URL with a new "Last updated" date.</p>
+
+        <h2>Contact</h2>
+        <p>Privacy questions: <a href="https://github.com/RemmyLee/redeye-vb-support/issues/new?template=question.yml&amp;title=%5BPrivacy%5D+">open a question on GitHub</a>.</p>
+    </div>
+</main>
+
+<footer>
+    <div class="wrap">
+        <span>&copy; 2026 Remmy Lee</span>
+        <span>
+            <a href="support.html">Support</a>
+            <a href="privacy-policy.html">Privacy</a>
+        </span>
+    </div>
+</footer>
+
+</body>
+</html>
